@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>maria berzoi</title>
+        <link href="teststyle.css" rel="stylesheet"/>
+
+    </head>
+    
+    <body>
+        <main>
+            <!--header panel (section 1)-->
+            
+            <section>
+                <div id="header">
+                    <h1>MARIA BERZOI</h1>
+                
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="https://www.instagram.com/007confused?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@007CONFUSED</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            <!--images (section 2)-->
+            <section>
+
+                <!--Container for image gallery -->
+              <div class = "container">
+
+                <!--COLUMN 1-->
+                   <div class = "column">
+                        <!--image number 1-->
+                        <div class = "imageBox">
+                            <div class = "image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id ="openImage1" ><img src="artwork\PXL_20231104_173532174.jpg" alt="Painting of house"></button>
+                            
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>LISBON</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal1">
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231104_173532174.jpg" alt="Painting of house">
+                                        <div class = "modal-text">
+                                            <h2>LISBON</h2>
+                                            <br>
+                                            <p id = "date">2023</p>
+                                            <p>Acrylic on canvas </p>
+                                            <p>11" x 14"</p>
+                                            <button type="button" class ="close-button" id = "closeImage1">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 2-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage2" ><img src="artwork\20241223_161057.jpg" alt="Goat and flower painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>FLORA AND FAUNA</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal2" >
+                                    <div class="modal-content">
+                                        <img src="artwork\20241223_161057.jpg" alt="Goat and flower painting">
+                                        <div class = "modal-text">
+                                            <h2>FLORA AND FAUNA</h2>
+                                            <br>
+                                            <p id = "date">2024</p>
+                                            <p>Acrylic on canvas </p>
+                                            <p>30" x 40"</p>
+                                            <button type="button" class ="close-button" id = "closeImage2">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                         <!--image number 9-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage9" ><img src="artwork\PXL_20240430_201218869.jpg" alt="toucan painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>TOUCAN</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal9" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20240430_201218869.jpg" alt="Flower painting">
+                                        <div class = "modal-text">
+                                            <h2>TOUCAN</h2>
+                                            <br>
+                                            <p id = "date">2024</p>
+                                            <p>Acrylic, pencil crayon, on canvas </p>
+                                            <p>11" x 14"</p>
+                                            <button type="button" class ="close-button" id = "closeImage9">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 13-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage13" ><img src="artwork\PXL_20231104_173650513.jpg" alt="Graduation cap"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>GRADUATION CAP</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal13" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231104_173650513.jpg" alt="Flower painting">
+                                        <div class = "modal-text">
+                                            <h2>GRADUATION CAP</h2>
+                                            <br>
+                                            <p id = "date">2023</p>
+                                            <p>Acrylic on fabric </p>
+                                            <p>12" x 12"</p>
+                                            <button type="button" class ="close-button" id = "closeImage13">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 16-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage16" ><img src="artwork\PXL_20231116_144114696.jpg" alt="cat drawing"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>CLEMENTINE CATS</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal16" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231116_144114696.jpg" alt="Flower painting">
+                                        <div class = "modal-text">
+                                            <h2>CLEMENTINE CATS</h2>
+                                            <br>
+                                            <p id = "date">2024</p>
+                                            <p>pencil crayon</p>
+                                            <p>6" x 4"</p>
+                                            <button type="button" class ="close-button" id = "closeImage16">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                         <!--image number 20-->
+                         <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage20" ><img src="artwork\PXL_20231203_142152157.jpg" alt="sketches"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>INK TEST</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal20" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231203_142152157.jpg" alt="Sketches">
+                                        <div class = "modal-text">
+                                            <h2>INK TEST</h2>
+                                            <br>
+                                            <p id = "date">2024</p>
+                                            <p>Pencil crayon, ink</p>
+                                            <p>6" x 8"</p>
+                                            <button type="button" class ="close-button" id = "closeImage20">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <!--COlUMN 2-->
+                   <div class = "column">
+                        <!--image number 3-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage3" ><img src="artwork\PXL_20240331_200657108.jpg" alt="Flower painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>YELLOW TULIP</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal3" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20240331_200657108.jpg" alt="portrait painting">
+                                        <div class = "modal-text">
+                                            <h2>YELLOW TULIP</h2>
+                                            <br>
+                                            <p id = "date">2024</p>
+                                            <p>Acrylic on canvas</p>
+                                            <p>16" x 20"</p>
+                                            <button type="button" class ="close-button" id = "closeImage3">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 4-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage4" ><img src="artwork\PXL_20231104_173710499.jpg" alt="portrait painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>PORTRAIT STUDY 1</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal4" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231104_173710499.jpg" alt="portrait painting">
+                                        <div class = "modal-text">
+                                            <h2>PORTRAIT STUDY 1</h2>
+                                            <br>
+                                            <p id = "date">2023</p>
+                                            <p>Acrylic on canvas</p>
+                                            <p>8" x 12"</p>
+                                            <button type="button" class ="close-button" id = "closeImage4">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 10-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage10" ><img src="artwork\PXL_20240331_201657724.jpg"alt="fish painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>COLOUR STUDY</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal10" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20240331_201657724.jpg" alt="fish painting">
+                                        <div class = "modal-text">
+                                            <h2>COLOUR STUDY</h2>
+                                            <br>
+                                            <p id = "date">2024</p>
+                                            <p>Oil pastel on canvas</p>
+                                            <p>16" x 20"</p>
+                                            <button type="button" class ="close-button" id = "closeImage10">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 17-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage17" ><img src="artwork\PXL_20230918_113923123.jpg"alt="flower painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>MOTHERS DAY</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal17" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20230918_113923123.jpg" alt="flower painting">
+                                        <div class = "modal-text">
+                                            <h2>MOTHERS DAY</h2>
+                                            <br>
+                                            <p id = "date">2021</p>
+                                            <p>Acrylic, pencil crayon, on canvas</p>
+                                            <p>12" x 13"</p>
+                                            <button type="button" class ="close-button" id = "closeImage17">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                         <!--image number 21-->
+                         <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage21" ><img src="artwork\Screenshot_20241222_125316_Instagram.jpg"alt="portrait painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>PORTRAIT STUDY 0</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal21" >
+                                    <div class="modal-content">
+                                        <img src="artwork\Screenshot_20241222_125316_Instagram.jpg" alt="portrait painting">
+                                        <div class = "modal-text">
+                                            <h2>PORTRAIT STUDY 0</h2>
+                                            <br>
+                                            <p id = "date">2021</p>
+                                            <p>Pencil crayon</p>
+                                            <p>6" x 8"</p>
+                                            <button type="button" class ="close-button" id = "closeImage21">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 23-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage23" ><img src="artwork\IMG_20231104_140015_521.jpg"alt="portrait painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>DAY 9, BARCELONA</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal23" >
+                                    <div class="modal-content">
+                                        <img src="artwork\IMG_20231104_140015_521.jpg" alt="portrait painting">
+                                        <div class = "modal-text">
+                                            <h2>DAY 9, BARCELONA</h2>
+                                            <br>
+                                            <p id = "date">2023</p>
+                                            <p>Pencil crayon,watercolour</p>
+                                            <p>6" x 4"</p>
+                                            <button type="button" class ="close-button" id = "closeImage23">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--COlUMN 3-->
+                    <div class = "column">
+                        <!--image number 5-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage5" ><img src="artwork\PXL_20231104_174004589.jpg" alt="portrait painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>PORTRAIT STUDY 2</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal5" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231104_174004589.jpg" alt="portrait painting">
+                                        <div class = "modal-text">
+                                            <h2>PORTRAIT STUDY 2</h2>
+                                            <br>
+                                            <p id = "date">2023</p>
+                                            <p>Acrylic on canvas</p>
+                                            <p>8" x 12"</p>
+                                            <button type="button" class ="close-button" id = "closeImage5">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 6-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage6" ><img src="artwork\PXL_20231229_044318376.jpg" alt="portrait painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>SUMMER PEACH</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal6" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231229_044318376.jpg" alt="portrait painting">
+                                        <div class = "modal-text">
+                                            <h2>SUMMER PEACH</h2>
+                                            <br>
+                                            <p id = "date">2023</p>
+                                            <p>Oil pastel</p>
+                                            <p>6" x 4"</p>
+                                            <button type="button" class ="close-button" id = "closeImage6">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 11-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage11" ><img src="artwork\PXL_20231104_174847845.jpg" alt="PEACH painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>DAY 12, BARCELONA</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal11" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231104_174847845.jpg" alt="PEACH  painting">
+                                        <div class = "modal-text">
+                                            <h2>DAY 12, BARCELONA</h2>
+                                            <br>
+                                            <p id = "date">2023</p>
+                                            <p>Crayon</p>
+                                            <p>6" x 4"</p>
+                                            <button type="button" class ="close-button" id = "closeImage11">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                         <!--image number 14-->
+                         <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage14" ><img src="artwork\PXL_20231104_174852593.jpg" alt="painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>DAY 13, BARCELONA</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal14" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231104_174852593.jpg" alt=" painting">
+                                        <div class = "modal-text">
+                                            <h2>DAY 13, BARCELONA</h2>
+                                            <br>
+                                            <p id = "date">2023</p>
+                                            <p>Watercolour, ink</p>
+                                            <p>6" x 4"</p>
+                                            <button type="button" class ="close-button" id = "closeImage14">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 18-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage18" ><img src="artwork\PXL_20231115_192230635.jpg" alt="painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>SCHOOL SKETCH</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal18" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231115_192230635.jpg" alt="painting">
+                                        <div class = "modal-text">
+                                            <h2>SCHOOL SKETCH</h2>
+                                            <br>
+                                            <p id = "date">2024</p>
+                                            <p>Ink</p>
+                                            <p>6" x 4"</p>
+                                            <button type="button" class ="close-button" id = "closeImage18">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        
+                        
+                   </div>
+                    
+                    <!--COlUMN 4-->
+                    <div class = "column">
+                        <!--image number 7-->
+                        <div class = "imageBox">
+                            <div class = "image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id ="openImage7" ><img src="artwork\PXL_20240717_155111657.jpg" alt="painting"></button>
+                            
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>MISHMASH</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal7">
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20240717_155111657.jpg" alt="Flower painting">
+                                        <div class = "modal-text">
+                                            <h2>MISHMASH</h2>
+                                            <br>
+                                            <p id = "date">2024</p>
+                                            <p>Collage, pencil crayon, watercolour, oil pastel</p>
+                                            <p>18" x 24"</p>
+                                            <button type="button" class ="close-button" id = "closeImage7">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+                       
+                        <!--image number 8-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage8" ><img src="artwork\PXL_20231104_174837875.jpg" alt="painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>DAY 10, BARCELONA</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal8" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231104_174837875.jpg" alt=" painting">
+                                        <div class = "modal-text">
+                                            <h2>DAY 10, BARCELONA</h2>
+                                            <br>
+                                            <p id = "date">2023</p>
+                                            <p>Crayon, ink</p>
+                                            <p>6" x 4"</p>
+                                            <button type="button" class ="close-button" id = "closeImage8">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 12-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage12" ><img src="artwork\PXL_20231104_174736710.jpg" alt="Flower painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>DAY 2, LISBON</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal12" >
+                                    <div class="modal-content">
+                                        <img src="artwork\PXL_20231104_174736710.jpg" alt="Flower painting">
+                                        <div class = "modal-text">
+                                            <h2>DAY 2, LISBON</h2>
+                                            <br>
+                                            <p id = "date">2023</p>
+                                            <p>Watercolour,ink</p>
+                                            <p>6" x 4"</p>
+                                            <button type="button" class ="close-button" id = "closeImage12">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 15-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage15" ><img src="artwork\20241222_124627.jpg" alt="Flower painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>SELF PORTRAIT</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal15" >
+                                    <div class="modal-content">
+                                        <img src="artwork\20241222_124627.jpg" alt="Flower painting">
+                                        <div class = "modal-text">
+                                            <h2>SELF PORTRAIT</h2>
+                                            <br>
+                                            <p id = "date">2024</p>
+                                            <p>Acrylic on canvas</p>
+                                            <p>8" x 12"</p>
+                                            <button type="button" class ="close-button" id = "closeImage15">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 19-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage19" ><img src="artwork\20220616_094456.jpg" alt="Flower painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>DISTANCE</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal19" >
+                                    <div class="modal-content">
+                                        <img src="artwork\20220616_094456.jpg" alt="Flower painting">
+                                        <div class = "modal-text">
+                                            <h2>SELF PORTRAIT</h2>
+                                            <br>
+                                            <p id = "date">2022</p>
+                                            <p>Acrylic on canvas</p>
+                                            <p>16" x 20"</p>
+                                            <button type="button" class ="close-button" id = "closeImage19">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+
+                        <!--image number 22-->
+                        <div class="imageBox">
+                            <div class="image">
+                                <!--image with button-->
+                                <button type="button" class ="open-button" id="openImage22" ><img src="artwork\PXL_20231104_174747233.jpg" alt="Flower painting"></button>
+                                
+                                <!--layover -->
+                                <div class="titleImage">
+                                    <h3>DAY 3, LISBON</h3>
+                                </div>
+
+                                <!--modal popup-->
+                                <dialog class = "modal" id = "modal22" >
+                                    <div class="modal-content">
+                                        <img src="art images\Screenshot 2024-12-17 131723.png" alt="Flower painting">
+                                        <div class = "modal-text">
+                                            <h2>DAY 3, LISBON</h2>
+                                            <br>
+                                            <p id = "date">2023</p>
+                                            <p>Crayon</p>
+                                            <p>6" x 4"</p>
+                                            <button type="button" class ="close-button" id = "closeImage22">X</button>
+                                        </div>
+                                    </div>
+                                </dialog>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+               
+            </section>
+        </main>
+        <script src="webScript.js">
+
+        </script>
+    </body>
+</html>

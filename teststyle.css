@@ -1,0 +1,233 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+#header {
+    height:35%;
+    width: 70%;
+    margin-left:15%;
+    margin-right:15%;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+h1 {
+    text-align: center;
+    font-size:40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:100;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+    font-size:30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color:rgb(188, 187, 187);
+}
+
+h4 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+}
+
+h5{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    font-weight:lighter;
+}
+
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+}
+
+.menu{
+    margin:0x;
+    display:flex;
+    justify-content:space-evenly;
+    
+}
+.menu ul{
+    list-style-type: none;
+    overflow:hidden; 
+}
+
+.menu a{
+    text-decoration: none;
+    display: block;
+    font-size:20px;
+    text-align: center;
+    padding:10px 40px;
+    color:black;
+}
+
+.menu li{
+    float:left;
+}
+
+body{
+    background-color:white;
+    padding:20px;
+}
+
+/*About page styling*/
+.aboutcontainer{
+    width:95%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:left;
+    gap:10px;
+}
+
+.line{
+    border-left: 6px solid green;
+    height: 450px;
+
+}
+
+.aboutcontainer img{
+    width: auto;
+    height:70vh;
+}
+
+.about{
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:left;
+    padding: 10px 10px 10px 10px;
+}
+
+.photo{
+    display:flex;
+    flex-direction:column;
+}
+
+/*gallery container*/
+.container{
+    width:95%;
+    margin:auto;
+    display:flex;
+    gap:10px;
+}
+
+.column{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+
+/*Image display*/
+@media(max-width:768px){
+    .container{
+        flex-direction:column;
+    }
+}
+
+.imageBox{
+    display:inline-block;
+    position: relative;
+    margin:0;
+    padding:0;
+    
+}
+
+.image img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    
+    margin:0;
+    padding:0;
+}
+
+/*title overlay*/
+.imageBox .titleImage{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity:0;
+    transition: 0.6s;
+}
+
+.open-button{
+    border:none;
+}
+
+.image:hover .titleImage{
+    opacity:1;
+    pointer-events:none;
+}
+
+/*Modal Style*/
+.modal{
+    position:fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+    border: none;
+    padding: 10px 10px 10px 10px; 
+    width:max-content;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row; 
+    align-items:center;
+}
+
+.modal-content img {
+    height:90vh;
+    width:auto;
+    display:block;
+}
+
+.modal-text {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 2px; 
+    padding-left: 10px;
+    padding-right:5px;
+}
+
+.modal-text #date{
+    font-style:italic;
+}
+
+.modal-text p{
+    font-size:15px;
+}
+
+.modal .close-button {
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor:pointer;
+    border:none;
+    background:#fff;
+    font-weight:bold;
+    padding: 3px 3px 3px 3px;
+    font-size: 20px;
+}
+
